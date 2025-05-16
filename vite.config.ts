@@ -4,6 +4,7 @@ import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
 export default defineConfig({
+  base: "/therandomapp/",
   plugins: [
     react(),
     runtimeErrorOverlay(),
@@ -28,9 +29,3 @@ export default defineConfig({
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
   },
-});
-export default defineConfig({
-  base: "/therandomapp/",
-  ...
-});
-
