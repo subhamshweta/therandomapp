@@ -29,3 +29,8 @@ export default defineConfig({
     emptyOutDir: true,
   },
 });
+export default defineConfig({
+  base: "/therandomapp/",
+  ...
+});
+
